@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!--  
+Copyright 2012 - 2015 Brian R. D'Urso
+ this  section is all a comment. It is the only comment in the file. 
+
+This file is part of Python Instrument Control System, also known as Pythics. 
+
+Pythics is free software: you can redistribute it and/or modify it under 
+the terms of the GNU General Public License as published by the Free 
+Software Foundation, either version 3 of the License, or (at your option) 
+any later version. 
+
+Pythics is distributed in the hope that it will be useful, but WITHOUT ANY 
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. 
+You should have received a copy of the GNU General Public License along with 
+Pythics. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<html>
+  <head>
+    <title>load parameters</title>
+  </head>
+
+  <body>
+
+      <tr><td colspan='1'>
+          <object classid='FilePicker' id='load_data_filename' width='100%'>
+            <param name='label' value='File to Load'/>
+            <param name='type' value='open'/>
+            <param name='save' value='False'/>
+          </object>
+
+    <h1>Parameter</h1>
+    
+    <object classid='TextBox' id='text' width='200'>
+    </object>
+    <br/>
+  </body>
+</html>
