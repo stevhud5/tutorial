@@ -19,4 +19,4 @@ class Task: # employs objects for multiple tasks
 class TimedTask(Task):
     def do(self): #overide	
         self.cnt = self.cnt +1
-        return (self.cnt)
+        return self.cnt 

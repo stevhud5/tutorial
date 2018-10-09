@@ -50,17 +50,17 @@ def initialize(log_text_box, text1, paramload, **kwargs):
     sh.setFormatter(formatter)
     private.logger.addHandler(sh)
     private.logger.info('initialize complete')
-    private.task_A = task.Task()
     private.task_B = task.Task()
     private.C = task.TimedTask()
+    private.filename_array = []
     text1.value = 'Process begun!'
 
-#do this when trigger_A button is pressed
-def do_A(Astatus, **kwargs): #Astatus is the indicator that displays the result. 
-    Astatus.value=private.task_A.do()
+#do this when file is selected
+def add_to_array(filename_in, **kwargs):  
+    private.filename_array.append(filename_in.value) 
     
 #do this when trigger_B button is pressed
-def do_B(Bstatus, **kwargs): #Bstatus is the indicator that displays the result. 
+def plot_all(Bstatus, **kwargs): #Bstatus is the indicator that displays the result. 
     Bstatus.value=private.task_B.do()
     
 #example repetative action.
